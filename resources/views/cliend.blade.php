@@ -25,7 +25,19 @@
                 {{ csrf_field() }}
 
                 @if(session('success'))
-                <div class="alert alert-dismissible alert-success">
+                <div style="
+                background: #cf9535;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
+                ">
                  {{session('success')}}.
                 </div>
               @else
@@ -56,8 +68,8 @@
 
             </fieldset>
             <fieldset>
-                <h2 class="fs-title">أفضل الاوقات </h2>
-                <h3 class="fs-subtitle">.</h3>
+                <h2 class="fs-title"> أفضل الأوقات للتواصل معكم  </h2>
+                <h3 class="fs-subtitle"></h3>
 
                 <select class="form-control" id="time" required name="time">
               <option>٩صباحا الى ١٢ مساء</option>

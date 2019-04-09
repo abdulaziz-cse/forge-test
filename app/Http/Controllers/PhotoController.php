@@ -51,7 +51,7 @@ class PhotoController extends Controller
         $post->number = $request->input('number');
         $post->save();
 
-        return redirect('/')->with('success' , 'تم إستلام طلبكم وجاري التواصل معكم قريباً');
+        return redirect('/')->with('success' , 'تم إستلام طلبكم وجاري التواصل معكم خلال ٢٤ ساعة كحد أقصى ');
 
 
     }
