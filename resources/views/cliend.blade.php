@@ -76,18 +76,19 @@
               <option>٣ مساء الى ٦ مساء</option>
               <option>٦ مساء الى ٩ مساء</option>
                </select>
+               <input type="button" name="next" class="next action-button" value="التالي"/>
 
               <input type="button" name="previous" class="previous action-button-previous" value="السابق"/>
 
-                <input type="button" name="next" class="next action-button" value="التالي"/>
             </fieldset>
             <fieldset>
                 <h2 class="fs-title">معلومات التواصل </h2>
                 <h3 class="fs-subtitle"> . </h3>
                 <input type="text" id="name" name="name"    placeholder="الأسم الثلاثي" required/>
                 <input type="text" id="number" name="number"  placeholder="05xxxxxxxx" required/>
-                <input type="button" name="previous" class="previous action-button-previous" value="السابق"/>
                 <button type="submit"  class="btn action-button"> إرسال</button>
+
+                <input type="button" name="previous" class="previous action-button-previous" value="السابق"/>
 
             </fieldset>
 
