@@ -64,6 +64,8 @@ body {
     font-family: myFirstFont;
     color: #cf9535;
     font-size: 13px;
+    text-align:right
+
 }
 
 
@@ -90,6 +92,7 @@ body {
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
+    text-align:center
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -105,6 +108,7 @@ body {
     border-radius: 25px;
     cursor: pointer;
     padding: 10px 5px;
+    text-align:center;
     margin: 10px 5px;
 }
 
