@@ -11,20 +11,55 @@
 |
 */
 
-Route::resource('/', 'PhotoController');
-route::post('posts/{postId}/accept','PhotoController@accept')->name('accept');
+Route::get('/', function () {
+    return view('index');
+});
+Route::post('/send', 'SendEmailController@store');
 
-Route::get('old','PhotoController@old');
+
+Route::get('/booking', function () {
+    return view('cliend');
+});
+Route::resource('/booking', 'PhotoController');
+
+
+Route::get('/job', 'JobController@index');
+Route::post('/job', 'JobController@store');
+
 
 
 Auth::routes();
 
-
 Route::group(['middleware' => ['web','auth']], function(){
 
-    Route::get('/home', function() {
+    Route::get('/home', function () {
+        return view('home');
+    });
+
+    Route::get('/admin ', function() {
         $posts['posts'] = App\Post::orderBy('created_at','desc')->paginate(8);
-         return view('/home', $posts);
+         return view('/admin', $posts);
+    });
+
+    Route::get('/send', function() {
+        $sends['sends'] = App\Send::orderBy('created_at','desc')->paginate(8);
+         return view('/send', $sends);
 
     });
+
+    Route::get('/jobs', function() {
+        $jobs['jobs'] = App\Job::orderBy('created_at','desc')->paginate(8);
+         return view('/jobs', $jobs);
+
+    });
+
+
+
+    Route::get('old','PhotoController@old');
+    Route::get('wait','PhotoController@wait');
+    route::post('posts/{postId}/accept','PhotoController@accept')->name('accept');
+    route::post('posts/{postId}/waiting','PhotoController@waiting')->name('waiting');
   });
+
+
+

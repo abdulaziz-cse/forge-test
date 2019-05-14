@@ -10,7 +10,6 @@
                     <img src="logo4.png" style="text-align:center; padding: 30px; width: 90%;">
 
                 </div>
-
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf

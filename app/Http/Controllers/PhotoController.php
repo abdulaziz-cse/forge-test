@@ -51,7 +51,7 @@ class PhotoController extends Controller
         $post->number = $request->input('number');
         $post->save();
 
-        return redirect('/')->with('success' , 'تم إستلام طلبكم وجاري التواصل معكم خلال ٢٤ ساعة كحد أقصى ');
+        return redirect('/booking')->with('success' , 'تم إستلام طلبكم وجاري التواصل معكم خلال ٢٤ ساعة كحد أقصى ');
 
 
     }
@@ -63,6 +63,15 @@ class PhotoController extends Controller
             return redirect()->back();
 
     }
+
+    public function waiting($postId){
+        $post = Post::findOrFail($postId);
+            $post->update(['approved' => 2]);
+            session()->flash('waiting', '  تم قبول العرض بنجاح !');
+            return redirect()->back();
+
+    }
+
 
     /**
      * Display the specified resource.
@@ -79,7 +88,12 @@ class PhotoController extends Controller
         $post = Post::orderBy('created_at','desc')->paginate(5);
         return view('oldhome',compact('post'));
 
+    }
 
+    public function wait()
+    {
+        $post = Post::orderBy('created_at','desc')->paginate(5);
+        return view('wait',compact('post'));
 
     }
 

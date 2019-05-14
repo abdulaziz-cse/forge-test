@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en" >
 
 <head>
@@ -9,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-      <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+      <link href="{{ asset('css/stylejob.css') }}" rel="stylesheet">
 
 </head>
 
@@ -22,7 +21,7 @@
                    <img src="logo4.png" style="text-align:center; padding: 30px; width: 90%;">
 
             <form  id="msform" action="{{ action('PhotoController@store') }}" method="POST">
-                {{ csrf_field() }}
+                    {{ csrf_field() }}
 
                 @if(session('success'))
                 <div style="
@@ -109,7 +108,6 @@
 
 
     <script  src="js/index.js"></script>
-
 
 
 
