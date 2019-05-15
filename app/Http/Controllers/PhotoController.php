@@ -17,7 +17,7 @@ class PhotoController extends Controller
      */
     public function index()
     {
-        $post = Post::orderBy('created_at','desc')->paginate(5);
+        $post = Post::orderBy('created_at','desc')->paginate(10);
 
         return view('cliend');
 
