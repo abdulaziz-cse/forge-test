@@ -190,7 +190,7 @@
           <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon" style="background: #fceef3;">  <i class="fas fa-syringe"></i> </div>
-              <h4 class="title"><a href="#E">قسم ليزر </a></h4>
+              <h4 class="title"><a href="#why-us">قسم ليزر </a></h4>
               <p class="description"></p>
             </div>
           </div>
