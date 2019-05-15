@@ -533,17 +533,17 @@
         <div class="row counters">
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">4</span>
+            <span data-toggle="counter-up">10</span>
             <p>العيادات</p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">50</span>
+            <span data-toggle="counter-up">45</span>
             <p>العاملين </p>
           </div>
 
           <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">3</span>
+            <span data-toggle="counter-up">5</span>
             <p>غرف الليزر </p>
           </div>
 
@@ -560,20 +560,6 @@
     <!--==========================
       Call To Action Section
     ============================-->
-    <section id="call-to-action" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-            <h3 class="cta-title">وزارة الصحة </h3>
-            <p class="cta-text">  تتشرف وزارة الصحة بخدمتك ويسعدها تلقي إتصالاتك وتلبية إحتياجاتك الصحية عبر خدمة 937 وعلى مدار الساعة </p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://www.moh.gov.sa/937/Pages/default.aspx"> 937 </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
 
 
@@ -713,6 +699,7 @@
             <a data-toggle="collapse" href="#faq6" class="collapsed"> 	ماهي ارقام التواصل مع مركز الرياض الطبي؟  <i class="ion-android-remove"></i></a>
             <div id="faq6" class="collapse" data-parent="#faq-list">
               <p>
+                    <a><i class="fab fa-whatsapp"></i></a>
                     للتواصل والاستفسار عبر الرقم 920008500
               </p>
             </div>
