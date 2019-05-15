@@ -611,6 +611,11 @@ h6 {
   padding-top: 40px;
 }
 
+#about .about-content p {
+    text-align: center;
+  }
+
+
 #about .about-content h2 {
   color: #cc9933;
   font-family:myFirstFont;
